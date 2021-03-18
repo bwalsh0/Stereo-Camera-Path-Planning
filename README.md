@@ -4,6 +4,8 @@ Stereo camera depth estimation and path-planning.
 Receives a stream of image pairs from two identical, calibrated cameras to compute a non-obstructed route.
 
 ### Results:
+https://www.youtube.com/watch?v=0zy6jO1vIwQ
+
 ![Fig. 1](example_results/figure_01.png?raw=true)
 ![Fig. 2](example_results/figure_02.png?raw=true)
 
