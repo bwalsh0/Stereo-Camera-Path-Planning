@@ -10,6 +10,7 @@ https://youtu.be/m3qOAA8Q0Sc
 
 
 #### Screenshots:
+![Fig. 0](example_results/figure_00.png?raw=true)
 ![Fig. 1](example_results/figure_01.png?raw=true)
 ![Fig. 2](example_results/figure_02.png?raw=true)
 
