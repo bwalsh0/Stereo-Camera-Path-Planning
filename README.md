@@ -1,23 +1,18 @@
 # Stereo Camera Path-Planning
-
-#### Description:
-This program is for a stereo camera device, and enables real-time path planning and obstacle avoidance for robotic vehicles.
-
-The code implements OpenCV with Python for camera calibration, stereo correspondence, 3D reconstruction, and pathfinding.
+Receives a stream of image pairs from two identical, calibrated cameras to compute a non-obstructed route.
 
 #### Algorithm Procedure:
 The input images are first rectified from camera calibration parameters before using OpenCV's StereoSGBM algorithm to compute the disparity map. The disparity map is then reprojected to a 3D space in the world coordinate system for obstacle filtering. Obstacles located above the floor plane are used to construct an occupancy grid. The A* pathfinding algorithm operates on the occupancy grid, with the end node determined by the furthest depth value with the shortest Euclidian distance from unified camera's principal point. The computed A* path is then back-projected to 2D image coordinates and overlaid on the unrectified left camera image.
 
 ## Results:
 #### Video demonstration: 
-https://youtu.be/Hd16ineBsT8
+https://youtu.be/m3qOAA8Q0Sc
 
 
 #### Screenshots:
 ![Fig. 0](example_results/figure_00.png?raw=true)
-![Fig. 4](example_results/figure_04.png?raw=true)
-![Device Photo](example_results/device_photo.png?raw=true)
-![SBD](example_results/system_block_diagram.png?raw=true)
+![Fig. 1](example_results/figure_01.png?raw=true)
+![Fig. 2](example_results/figure_02.png?raw=true)
 
 
 ## Core Dependencies:
